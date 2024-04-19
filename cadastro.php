@@ -37,5 +37,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     setcookie('InfoUser-Cor', $cor, time()+3600, '/');
     setcookie('InfoUser-contaVisitas', 0, time()+3600, '/');
     echo 'Cadastro efetuado com sucesso!';
+    header('Location: bemvindo.php');
 }
 ?>
